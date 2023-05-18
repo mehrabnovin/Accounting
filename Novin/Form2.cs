@@ -21,32 +21,17 @@ namespace Novin
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        {
-
+        { 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source =C:/database/Accounting.accdb");
-            OleDbCommand cmd = con.CreateCommand();
-            con.Open();
-            cmd.CommandText = "Insert into gold(name,debit)Values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox3.Text + "')";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Record Submitted", "Congrats");
-            con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source =C:/database/Accounting.accdb");
-            OleDbCommand cmd = con.CreateCommand();
-            con.Open();
-            cmd.CommandText = "Insert into gold(name,debit)Values('" + textBox2.Text + "','" + textBox3.Text + "')";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Record Submitted", "Congrats");
-            con.Close();
+
+
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -57,6 +42,28 @@ namespace Novin
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void debit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source =C:/database/Accounting.accdb");
+            OleDbCommand cmd = con.CreateCommand();
+            con.Open();
+            cmd.CommandText = "Insert into vi(1,2,3,4,5,6)Values('" + code.Text + "','" + name.Text + "','" + debit.Text + "','" + creditor.Text + "','" + callnumber.Text + "','" + date.Text + "')";
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("حساب با موفقیت افتتاح شد", "پیام");
+            con.Close();
         }
     }
 }

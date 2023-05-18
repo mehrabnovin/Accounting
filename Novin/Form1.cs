@@ -48,6 +48,12 @@ namespace Novin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form form3 = new Form3();
+            form3.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
             Form form2 = new Form2();
             form2.ShowDialog();
         }

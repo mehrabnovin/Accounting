@@ -46,6 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet2.cs">
+      <DependentUpon>AccountingDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +91,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +118,72 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AccountingDataSet.xsc">
+      <DependentUpon>AccountingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet.xss">
+      <DependentUpon>AccountingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet1.xsc">
+      <DependentUpon>AccountingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet1.xss">
+      <DependentUpon>AccountingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet2.xsc">
+      <DependentUpon>AccountingDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet2.xss">
+      <DependentUpon>AccountingDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet3.xsc">
+      <DependentUpon>AccountingDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet3.xss">
+      <DependentUpon>AccountingDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet4.xsc">
+      <DependentUpon>AccountingDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet4.xss">
+      <DependentUpon>AccountingDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet5.xsc">
+      <DependentUpon>AccountingDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet5.xss">
+      <DependentUpon>AccountingDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,9 +207,13 @@
     <None Include="Resources\bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Accounting.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\d.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
