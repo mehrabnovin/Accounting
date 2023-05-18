@@ -21,3 +21,4 @@ C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Propertie
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.csproj.GenerateResource.Cache
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form3.resources
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\bin\Debug\Accounting.accdb
+C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form4.resources

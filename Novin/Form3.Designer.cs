@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.accountingDataSet1 = new Novin.AccountingDataSet1();
             this.accountingDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.taBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,16 +52,25 @@
             this.tableAdapterManager = new Novin.AccountingDataSet2TableAdapters.TableAdapterManager();
             this.taBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.viBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.accountingDataSet7 = new Novin.AccountingDataSet7();
             this.viBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.accountingDataSet5 = new Novin.AccountingDataSet5();
             this.viTableAdapter = new Novin.AccountingDataSet5TableAdapters.viTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_SearchName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.accountingDataSet6 = new Novin.AccountingDataSet6();
+            this.tblEmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_EmployeeTableAdapter = new Novin.AccountingDataSet6TableAdapters.tbl_EmployeeTableAdapter();
+            this.viBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.viTableAdapter1 = new Novin.AccountingDataSet7TableAdapters.viTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taBindingSource)).BeginInit();
@@ -71,8 +84,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet4BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEmployeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // accountingDataSet1
@@ -156,27 +174,35 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
+            this.Column1,
+            this.FirstName,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView1.DataSource = this.viBindingSource;
-            this.dataGridView1.GridColor = System.Drawing.Color.MediumBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.DataSource = this.viBindingSource2;
+            this.dataGridView1.GridColor = System.Drawing.Color.Gold;
+            this.dataGridView1.Location = new System.Drawing.Point(-32, -1);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(653, 491);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // viBindingSource2
+            // 
+            this.viBindingSource2.DataMember = "vi";
+            this.viBindingSource2.DataSource = this.accountingDataSet7;
+            // 
+            // accountingDataSet7
+            // 
+            this.accountingDataSet7.DataSetName = "AccountingDataSet7";
+            this.accountingDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // viBindingSource
             // 
@@ -192,76 +218,124 @@
             // 
             this.viTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // txt_SearchName
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "1";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("B Mitra", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn1.FillWeight = 60F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "کد حساب";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 60;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 80;
+            this.txt_SearchName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_SearchName.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txt_SearchName.Location = new System.Drawing.Point(627, 79);
+            this.txt_SearchName.Multiline = true;
+            this.txt_SearchName.Name = "txt_SearchName";
+            this.txt_SearchName.Size = new System.Drawing.Size(179, 34);
+            this.txt_SearchName.TabIndex = 3;
+            this.txt_SearchName.TextChanged += new System.EventHandler(this.txt_Search_TextChanged);
             // 
-            // dataGridViewTextBoxColumn2
+            // label1
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "2";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("2  Mitra", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn2.HeaderText = "نام حساب";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.label1.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(669, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "جستجو با نام";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // accountingDataSet6
+            // 
+            this.accountingDataSet6.DataSetName = "AccountingDataSet6";
+            this.accountingDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblEmployeeBindingSource
+            // 
+            this.tblEmployeeBindingSource.DataMember = "tbl_Employee";
+            this.tblEmployeeBindingSource.DataSource = this.accountingDataSet6;
+            // 
+            // tbl_EmployeeTableAdapter
+            // 
+            this.tbl_EmployeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // viBindingSource1
+            // 
+            this.viBindingSource1.DataMember = "vi";
+            this.viBindingSource1.DataSource = this.accountingDataSet7;
+            // 
+            // viTableAdapter1
+            // 
+            this.viTableAdapter1.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("B Mitra", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(674, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 39);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "خروج";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id";
+            this.Column1.HeaderText = "کد حساب";
+            this.Column1.Name = "Column1";
+            // 
+            // FirstName
+            // 
+            this.FirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FirstName.DataPropertyName = "FirstName";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.FirstName.DefaultCellStyle = dataGridViewCellStyle1;
+            this.FirstName.HeaderText = "نام حساب";
+            this.FirstName.Name = "FirstName";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "3";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTextBoxColumn3.HeaderText = "بدهکار ریال";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 133;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "4";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn4.HeaderText = "بستانکار ریال";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 134;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "5";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTextBoxColumn5.HeaderText = "شماره تماس";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 133;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "6";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn6.HeaderText = "تاریخ";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 133;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(483, 283);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form3
             // 
@@ -269,9 +343,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Novin.Properties.Resources.d;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(789, 393);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(811, 489);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_SearchName);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
@@ -289,8 +366,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet4BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.taBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountingDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEmployeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,12 +399,21 @@
         private AccountingDataSet5 accountingDataSet5;
         private System.Windows.Forms.BindingSource viBindingSource;
         private AccountingDataSet5TableAdapters.viTableAdapter viTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.TextBox txt_SearchName;
+        private System.Windows.Forms.Label label1;
+        private AccountingDataSet6 accountingDataSet6;
+        private System.Windows.Forms.BindingSource tblEmployeeBindingSource;
+        private AccountingDataSet6TableAdapters.tbl_EmployeeTableAdapter tbl_EmployeeTableAdapter;
+        private AccountingDataSet7 accountingDataSet7;
+        private System.Windows.Forms.BindingSource viBindingSource1;
+        private AccountingDataSet7TableAdapters.viTableAdapter viTableAdapter1;
+        private System.Windows.Forms.BindingSource viBindingSource2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
