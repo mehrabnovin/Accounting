@@ -65,5 +65,25 @@ namespace Novin
             MessageBox.Show("حساب با موفقیت افتتاح شد", "پیام");
             con.Close();
         }
+
+        private void code_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void خروجToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

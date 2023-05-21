@@ -89,6 +89,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountingDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AccountingDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +123,24 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -126,6 +154,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -225,6 +262,28 @@
     <None Include="AccountingDataSet7.xss">
       <DependentUpon>AccountingDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="AccountingDataSet8.xsc">
+      <DependentUpon>AccountingDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet8.xss">
+      <DependentUpon>AccountingDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet9.xsc">
+      <DependentUpon>AccountingDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet9.xss">
+      <DependentUpon>AccountingDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -254,6 +313,22 @@
     <Content Include="Accounting.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\of-gold-gradient-gold-gradient-background-texture-metallic-illustration-for-luxury-frame-ribbon-banner-web-coin-and-label-elegant-light-and-shine-template-free-vector.jpg" />
+    <None Include="Resources\tal71.jpg" />
+    <None Include="Resources\tal7.jpg" />
+    <None Include="Resources\Check.png" />
+    <None Include="Resources\Check.jpg" />
+    <None Include="Resources\nody-عکس-پروفایل-چشم-ضربدری-1633152859.png" />
+    <None Include="Resources\Screenshot_20230225_035355.png" />
+    <None Include="Resources\asd.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2030123.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2053453.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2053452.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2053451.png" />
+    <None Include="Resources\Screenshot 2023-05-19 205345.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2030122.png" />
+    <None Include="Resources\Screenshot 2023-05-19 2030121.png" />
+    <None Include="Resources\Screenshot 2023-05-19 203012.png" />
     <None Include="Resources\d.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

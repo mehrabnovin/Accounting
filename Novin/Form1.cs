@@ -12,60 +12,93 @@ namespace Novin
 {
     public partial class Form1 : Form
     {
+        string user = "novin";
+        string passwd = "novin";
+        Timer timer = new Timer();
         public Form1()
         {
             InitializeComponent();
+            label4.Text = DateTime.Now.ToString("dd/MM/yyyy");//tarikh feli ro mide
+            label3.Text = DateTime.Now.ToString("HH:mm:ss tt");
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Interval = 800;
+            timer.Start();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        //////////////////////
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Close();
+            label3.Text = DateTime.Now.ToString("HH:mm:ss tt");//zaman ro mide
         }
 
-        private void button3_MouseHover(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            button3.ForeColor = Color.Red;
-            button3.Cursor = Cursors.Hand;
-            
 
-        }
-
-        private void button3_MouseLeave(object sender, EventArgs e)
-        {
-            button3.ForeColor = Color.Black;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("این برنامه در سال 1402 توسط محراب نوین توسعه داده شده است و به صورت متن باز(open sourecs)است");
-
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form form3 = new Form3();
-            form3.ShowDialog();
+            if (textBox1.Text=="admin" && textBox2.Text == "a")
+            {
+                    Form objform = new Form6();
+                    objform.Show();
+                textBox1.Clear();
+                textBox2.Clear();
+
+            }
+           else
+                MessageBox.Show("نام کاربری یا رمز عبور اشتباه است", "پیام برای کاربر");
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form form2 = new Form2();
-            form2.ShowDialog();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void button1_KeyDown(object sender, KeyEventArgs e)
         {
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void textBox2_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
+        }
+
+        private void textBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
         }
     }
 }

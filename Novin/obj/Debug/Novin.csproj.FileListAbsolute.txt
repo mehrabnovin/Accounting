@@ -15,10 +15,13 @@ C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.pdb
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\bin\Debug\Novin.exe
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\bin\Debug\Novin.pdb
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.csprojResolveAssemblyReference.cache
-C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form1.resources
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form2.resources
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Properties.Resources.resources
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.csproj.GenerateResource.Cache
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form3.resources
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\bin\Debug\Accounting.accdb
 C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form4.resources
+C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form5.resources
+C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form6.resources
+C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form1.resources
+C:\Users\Mehra novin\Documents\GitHub\Accounting\Novin\obj\Debug\Novin.Form7.resources

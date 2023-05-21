@@ -99,5 +99,10 @@ namespace Novin
         {
             button1.ForeColor = Color.Black;
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
