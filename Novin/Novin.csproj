@@ -56,6 +56,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountingDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AccountingDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountingDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AccountingDataSet2.cs">
       <DependentUpon>AccountingDataSet2.xsd</DependentUpon>
     </Compile>
@@ -195,6 +200,17 @@
     </None>
     <None Include="AccountingDataSet1.xss">
       <DependentUpon>AccountingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet10.xsc">
+      <DependentUpon>AccountingDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AccountingDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountingDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountingDataSet10.xss">
+      <DependentUpon>AccountingDataSet10.xsd</DependentUpon>
     </None>
     <None Include="AccountingDataSet2.xsc">
       <DependentUpon>AccountingDataSet2.xsd</DependentUpon>

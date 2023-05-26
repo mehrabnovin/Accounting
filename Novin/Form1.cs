@@ -11,9 +11,7 @@ using System.Windows.Forms;
 namespace Novin
 {
     public partial class Form1 : Form
-    {
-        string user = "novin";
-        string passwd = "novin";
+        { 
         Timer timer = new Timer();
         public Form1()
         {
@@ -49,7 +47,7 @@ namespace Novin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="admin" && textBox2.Text == "a")
+            if (textBox1.Text=="a" && textBox2.Text == "a")
             {
                     Form objform = new Form6();
                     objform.Show();
@@ -59,6 +57,8 @@ namespace Novin
             }
            else
                 MessageBox.Show("نام کاربری یا رمز عبور اشتباه است", "پیام برای کاربر");
+            textBox1.Clear();
+            textBox2.Clear();
         }
 
         private void button1_KeyDown(object sender, KeyEventArgs e)
@@ -98,6 +98,16 @@ namespace Novin
             if (e.KeyData == Keys.Enter)
             {
                 button1_Click(sender, e);
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (checkBox1.Checked)
+                    textBox2.PasswordChar = '\0';
+                else
+                    textBox2.PasswordChar = '*';
             }
         }
     }

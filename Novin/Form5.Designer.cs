@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.خروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,16 +61,6 @@
             this.button1.Text = "صدور فاکتور جدید";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("2  Mitra", 15F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(44, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 76);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "صدور کل بدهکار و بستانکار";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -109,7 +98,6 @@
             this.ClientSize = new System.Drawing.Size(800, 470);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -127,7 +115,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem خروجToolStripMenuItem;

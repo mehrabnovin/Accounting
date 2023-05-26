@@ -56,7 +56,8 @@ namespace Novin
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source =C:/database/Accounting.accdb");
+
+            OleDbConnection con = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:/database/Accounting.accdb");
             OleDbCommand cmd = con.CreateCommand();
             con.Open();
             cmd.CommandText = "Insert into vi(id,FirstName,3,4,5,6)Values('" + code.Text + "','" + name.Text + "','" + debit.Text + "','" + creditor.Text + "','" + callnumber.Text + "','" + date.Text + "')";

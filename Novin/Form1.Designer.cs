@@ -41,6 +41,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +117,7 @@
             this.textBox2.Location = new System.Drawing.Point(179, 107);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = 'X';
+            this.textBox2.PasswordChar = '*';
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.textBox2.Size = new System.Drawing.Size(136, 35);
             this.textBox2.TabIndex = 10;
@@ -175,6 +176,20 @@
             this.label4.Text = " ";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.checkBox1.Font = new System.Drawing.Font("2  Mitra", 8F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(318, 145);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(81, 21);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "نمایش گذرواژه";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +197,7 @@
             this.BackgroundImage = global::Novin.Properties.Resources.tal71;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(565, 342);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -218,5 +234,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
